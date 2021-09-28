@@ -2075,14 +2075,13 @@ require(['jquery'], function($) {
 				"description": "当前版本:" + app.version + " (点击检查更新)"
 			}, {
 				"title": "Github",
-				"value": "openGithub",
-				"description": "https://github.com/IcedWatermelonJuice/HMOSHomePage"
+				"value": "openMineGithub",
+				"description": "https://github.com/lieber68/HMOSHomePage"
 
 			}, {
-				"title": "Gitee(可能不是最新版本)",
-				"value": "openGitee",
-				"description": "https://gitee.com/gem_xl/HMOSHomePage"
-
+				"title": "说明",
+				"value": "tips",
+				"description": "Fork IcedWatermelonJuice/HMOSHomePage 修改自用!"
 			}
 		];
 		var html =
@@ -2216,11 +2215,7 @@ require(['jquery'], function($) {
 					alert('已取消初始化!');
 				}
 
-			} else if (value === "openGithub") {
-				// open($this.find('.set-description').text());
-				//kiwi本地页面暂时无法使用open()方法,替换为location.href方法
-				location.href = $this.find('.set-description').text();
-			} else if (value === "openGitee") {
+			} else if (value === "openMineGithub") {
 				// open($this.find('.set-description').text());
 				//kiwi本地页面暂时无法使用open()方法,替换为location.href方法
 				location.href = $this.find('.set-description').text();
